@@ -47,7 +47,7 @@ jobs:
             --deployment-group-name DevOps \
             --deployment-config-name CodeDeployDefault.OneAtATime \
             --github-location repository=${{ github.repository }},commitId=${{ github.sha }}
-      - name: Sleep for 1 minute
+      - name: Sleep for 40 seconds
         run: sleep 40s
         shell: bash
       - name: Check the health of the deployed service
