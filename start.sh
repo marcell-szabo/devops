@@ -1,5 +1,5 @@
 #!/bin/bash
 
 
-cd $HOME/devops/ci
+cd /home/ec2-user/devops/ci
 docker-compose up
