@@ -59,4 +59,4 @@ jobs:
           # Delay between retries
           retry-delay: 30s # Optional, only applicable to max-attempts > 1
           # Retry all errors, including 404. This option might trigger curl upgrade.
-          retry-all: no # Optional, defaults to "no"
+          retry-all: false # Optional, defaults to "no"
