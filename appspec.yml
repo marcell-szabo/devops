@@ -1,0 +1,10 @@
+version: 0.0
+os: linux
+files:
+  - sources: .
+    destination: /home/ec2-user/devops
+hooks:
+  ApplicationStart:
+    - location: start.sh
+      timeout: 60
+      runas: root
