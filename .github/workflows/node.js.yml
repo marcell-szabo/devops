@@ -47,6 +47,9 @@ jobs:
             --deployment-group-name DevOps \
             --deployment-config-name CodeDeployDefault.OneAtATime \
             --github-location repository=${{ github.repository }},commitId=${{ github.sha }}
+      - name: Sleep for 1 minute
+        run: sleep 60s
+        shell: bash
       - name: Check the health of the deployed service
         uses: jtalk/url-health-check-action@v2
         with:
